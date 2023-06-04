@@ -1,7 +1,7 @@
-package com.example.demo.repository;
+package com.example.workshopmongo.repository;
 
 
-import com.example.demo.domain.User;
+import com.example.workshopmongo.domain.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

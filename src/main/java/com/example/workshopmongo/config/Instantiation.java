@@ -1,7 +1,7 @@
-package com.example.demo.config;
+package com.example.workshopmongo.config;
 
-import com.example.demo.domain.User;
-import com.example.demo.repository.UserRepository;
+import com.example.workshopmongo.domain.User;
+import com.example.workshopmongo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;

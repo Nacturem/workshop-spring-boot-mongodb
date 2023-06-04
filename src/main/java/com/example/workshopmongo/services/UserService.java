@@ -1,7 +1,7 @@
-package com.example.demo.services;
+package com.example.workshopmongo.services;
 
-import com.example.demo.domain.User;
-import com.example.demo.repository.UserRepository;
+import com.example.workshopmongo.domain.User;
+import com.example.workshopmongo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
