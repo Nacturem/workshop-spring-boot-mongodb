@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@Document(collection ="user")
+@Document(collection ="users")
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -20,8 +20,6 @@ public class User implements Serializable {
 
     @DBRef(lazy = true)
     private List<Post> posts = new ArrayList<>();
-
-
 
     public User(){
 
