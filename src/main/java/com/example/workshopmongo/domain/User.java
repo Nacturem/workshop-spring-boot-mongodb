@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@Document(collection ="users")
+@Document(collection ="user")
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
