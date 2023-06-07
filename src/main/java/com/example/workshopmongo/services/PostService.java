@@ -20,21 +20,25 @@ public class PostService {
     @Autowired
     private PostRepository repo;
 
-    public Post findById(String id) {
-        return repo.findById(id)
-                .orElseThrow(() -> new ObjectNotFoundException("Object Not Found"));
-
-        }
-    public List<Post> findByTitle(String text) {
-        return repo.searchTitle(    text);
+    public List<Post> findAll(){
+        return repo.findAll();
 
     }
-    public List<Post> fullSearch(String text, Date minDate, Date maxDate){
+
+    public Post findById(String id) {
+        Optional<Post> obj = repo.findById(id);
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Object Not Found"));
+
+    }
+
+    public List<Post> findByTitle(String text) {
+        return repo.searchTitle(text);
+
+    }
+    public List<Post> fullSearch(String text, Date minDate, Date maxDate) {
         maxDate = new Date(maxDate.getTime() + 24 * 60 * 60 * 1000);
         return repo.fullSearch(text, minDate, maxDate);
     }
-
-
 
     }
 
